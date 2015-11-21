@@ -1,0 +1,155 @@
+//Variables
+$puppies: 0;
+$kittens: 131px;
+
+ul{
+    padding: 0;
+
+    li{
+        list-style: none;
+    }
+}
+
+.col-3{
+    display: inline-block;
+    width: 23.1%;
+    vertical-align: top;
+    margin: $puppies 5%;
+}
+
+.column_styles{
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+
+//mixins
+@mixin vendor-prefix($property, $value){
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+
+body{
+    margin: $puppies;
+
+    >header{
+        background-image: url('../images/naruto.jpg');
+        text-align: center;
+        height: 600px;
+        background-position-y: -50px;
+
+        h1{
+            font-size: 60px;
+            font-family: fantasy;
+            font-weight: bold;
+            margin: $puppies;
+        }
+
+        img{
+            width: 160px;
+            height: 190px;
+            margin: 100px $puppies;
+            @include vendor-prefix(border-radius, 50%)
+        }
+
+        h4{
+            font-size: 25px;
+            color:white;
+            font-family: Arial;
+            margin: $puppies;
+        }
+    }//END OF HEADER!!!!!!!!!!!!!!!!!!!
+
+    .body{
+        padding: 40px 0;
+        background-color: purple;
+
+        .knowledge{
+
+            header{
+                background-image: url('../images/selife.jpg');
+                color: white;
+                height: 131px;
+                background-size: cover;
+                background-position-y: -60px;
+
+                h2{
+                    line-height: 131px;
+                    margin: $puppies;
+                }
+            }
+        }
+
+        .topics{
+            @extend .knowledge;
+        }
+
+        .troy{
+            div{
+                h2{
+                    margin: $puppies;
+                }
+            }
+            .naptime{
+                background-image: url('../images/naptime.jpg');
+                height: 131px;
+                background-position-y: -450px;
+                background-position-x: -220px;
+                color: white;
+                margin-bottom: 40px;
+
+                h2{
+                    line-height: $kittens;
+                }
+            }
+
+            .lunch{
+                background-image: url('../images/lunchtime.jpg');
+                height: $kittens;
+                background-position-y: -302px;
+                background-position-x: -200px;
+                color: white;
+                margin-bottom: 40px;
+
+                h2{
+                    line-height: $kittens;
+                }
+            }
+
+            .playtime{
+                background-image: url('../images/playtime.jpg');
+                height: $kittens;
+                background-position-y: -146px;
+                background-position-x: -350px;
+                color: white;
+
+                h2{
+                    line-height: $kittens;
+                }
+            }
+        }
+    }//END OF CLASS BODY!!!!!!!!!!!!!!!!!!!!!
+
+    footer{
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+
+        .social_icons{
+            a{
+                margin: $puppies 5px;
+
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }//END OF FOOTER!!!!!!!!!!!!!!!!!!!!!
+}//END OF BODY!!!!!!!!!!!!!!!!!!!!!

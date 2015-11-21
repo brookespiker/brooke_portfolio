@@ -1,0 +1,94 @@
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.col-3 {
+  display: inline-block;
+  width: 23.1%;
+  vertical-align: top;
+  margin: 0 5%; }
+
+.column_styles {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: monospace; }
+
+body {
+  margin: 0; }
+  body > header {
+    background-image: url("../images/naruto.jpg");
+    text-align: center;
+    height: 600px;
+    background-position-y: -50px; }
+    body > header h1 {
+      font-size: 60px;
+      font-family: fantasy;
+      font-weight: bold;
+      margin: 0; }
+    body > header img {
+      width: 160px;
+      height: 190px;
+      margin: 100px 0;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
+    body > header h4 {
+      font-size: 25px;
+      color: white;
+      font-family: Arial;
+      margin: 0; }
+  body .body {
+    padding: 40px 0;
+    background-color: purple; }
+    body .body .knowledge header, body .body .topics header {
+      background-image: url("../images/selife.jpg");
+      color: white;
+      height: 131px;
+      background-size: cover;
+      background-position-y: -60px; }
+      body .body .knowledge header h2, body .body .topics header h2 {
+        line-height: 131px;
+        margin: 0; }
+    body .body .troy div h2 {
+      margin: 0; }
+    body .body .troy .naptime {
+      background-image: url("../images/naptime.jpg");
+      height: 131px;
+      background-position-y: -450px;
+      background-position-x: -220px;
+      color: white;
+      margin-bottom: 40px; }
+      body .body .troy .naptime h2 {
+        line-height: 131px; }
+    body .body .troy .lunch {
+      background-image: url("../images/lunchtime.jpg");
+      height: 131px;
+      background-position-y: -302px;
+      background-position-x: -200px;
+      color: white;
+      margin-bottom: 40px; }
+      body .body .troy .lunch h2 {
+        line-height: 131px; }
+    body .body .troy .playtime {
+      background-image: url("../images/playtime.jpg");
+      height: 131px;
+      background-position-y: -146px;
+      background-position-x: -350px;
+      color: white; }
+      body .body .troy .playtime h2 {
+        line-height: 131px; }
+  body footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0; }
+    body footer .social_icons a {
+      margin: 0 5px; }
+      body footer .social_icons a img {
+        width: 50px; }
+
+/*# sourceMappingURL=style.css.map */
